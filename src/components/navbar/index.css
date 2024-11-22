@@ -1,0 +1,77 @@
+#header{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F4;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo{
+    height: 60px;
+    width: 75px;
+}
+
+#navbar li{
+    list-style: none;
+    padding:0 20px;
+    position: relative;
+
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color:aqua;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 40%;
+    height: 2.5px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#navbar .mode{
+    width: 20px;
+}
+
+
+.cart-icon {
+    position: relative; /* Allows for positioning of the badge */
+    color: #333; /* Change to your preferred color */
+}
+
+.cart-icon:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* If you have a cart item count badge */
+.cart-icon::after {
+    content: '0'; /* Default count; you can dynamically update this */
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red; /* Badge color */
+    color: white; /* Badge text color */
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px; /* Adjust size as needed */
+}

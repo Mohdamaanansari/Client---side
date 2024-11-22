@@ -1,0 +1,119 @@
+/* Footer section styling */
+.footer-section {
+    display: flex;
+    flex-wrap: wrap; /* Allows columns to wrap in smaller screens */
+    padding: 40px 20px;
+    background-color: #282c34; /* Dark background for footer */
+    color: #ffffff; /* White text for contrast */
+    justify-content: space-between; /* Space between columns */
+}
+
+/* Column styles */
+.footer-col {
+    flex: 1; /* Each column takes equal width */
+    padding: 20px;
+    flex-direction: column;
+}
+
+/* Logo styles */
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+/* Headings */
+.footer-col h4 {
+    margin-bottom: 15px;
+    font-size: 1.5rem; /* Size for headings */
+    color: #ffffff; /* White text for headings */
+}
+
+/* Text and links */
+.footer-col p,
+.footer-col a {
+    margin: 5px 0;
+    color: #dcdcdc; /* Light grey color for text */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer-col a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #ffffff; /* Change link color on hover */
+}
+.footer-col.about-info {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column; /* Align items in a row */
+    align-items: left; /* Vertically center the items */
+    gap: 15px; /* Adds spacing between each link */
+}
+
+.footer-col.about-info h4 {
+    margin-right: 20px; /* Adds some space between the heading and links */
+}
+
+.footer-col.about-info a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Set the color of links */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.footer-col.about-info a:hover {
+    color: #007bff; /* Change color on hover */
+}
+.footer-col.account-info {
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: flex-start; /* Align items to the start of the container */
+    gap: 10px; /* Adds spacing between each link */
+    margin-bottom: 20px; /* Adds some margin below the column for spacing */
+}
+
+.footer-col.account-info h4 {
+    margin-bottom: 10px; /* Adds some space between the heading and the links */
+}
+
+.footer-col.account-info a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Set the color of links */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.footer-col.account-info a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+
+
+/* Social media icons */
+.social-follow {
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+.social-icons a {
+    color: #dcdcdc; /* Light grey for icons */
+    font-size: 1.5rem; /* Icon size */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Change icon color on hover */
+}
+
+/* App install section */
+.app-icons {
+    display: flex;
+    gap: 10px; /* Space between app icons */
+    margin: 15px 0; /* Margin above and below */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .footer-section {
+        flex-direction: column; /* Stack columns on smaller screens */
+    }
+}

@@ -1,0 +1,302 @@
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+#feature .fe-box{
+    background: white;
+    width: 170px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+    border: 5px solid #161a44;
+    border-radius: 4px;
+    margin: 15px 0;
+
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#feature .fe-box h6{
+    padding: 9px 8px 6px 8px;
+    display: inline-block;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+#feature .fe-box:nth-child(2) h6 {
+    background-color: #cdebbc;
+}
+#feature .fe-box:nth-child(3) h6 {
+    background-color: #d1e8f2;
+}
+#feature .fe-box:nth-child(4) h6 {
+    background-color: #cdd4f8;
+}
+#feature .fe-box:nth-child(5) h6 {
+    background-color:#f6dbf6;
+}
+#feature .fe-box:nth-child(6) h6 {
+    background-color: #fff2e5;
+}
+.section-p1 {
+    padding: 20px;
+    text-align: center;
+}
+
+.pro-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensures even spacing */
+    margin-top: 20px;
+}
+
+.pro-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensures even spacing */
+    margin-top: 20px;
+}
+
+.pro {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: calc(25% - 20px); /* Adjusted width calculation */
+    box-sizing: border-box; /* Ensures padding/margins are included in width */
+}
+
+.pro:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pro img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.des {
+    margin-top: 15px;
+}
+
+.des h5 {
+    margin: 10px 0;
+}
+
+.des h4 {
+    color: #333;
+}
+
+.pro2 {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: calc(25% - 20px); /* Adjusted width calculation */
+    box-sizing: border-box; /* Ensures padding/margins are included in width */
+}
+
+.pro2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pro2 img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/* Optional responsive design */
+@media (max-width: 768px) {
+    .pro {
+        width: calc(50% - 20px); /* 2 products in a row */
+    }
+}
+
+@media (max-width: 480px) {
+    .pro {
+        width: calc(100% - 20px); /* 1 product in a row */
+    }
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../../assets/banner8.jpeg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h1{
+    color: #fff;
+    font-size: 16px;
+}
+#banner h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 5px 0;
+}
+#banner h2 span{
+    color: #ef3636;
+}
+#banner button:hover{
+    background-color: #088176;
+    color: #fff;
+}
+
+/* Styles for the banner section */
+#sm-banner {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between the banner boxes */
+    padding: 50px 20px; /* Padding around the section */
+    gap: 20px; /* Space between columns */
+}
+
+/* Individual banner box styles */
+.banner-box {
+    flex: 1; /* Allow boxes to take equal space */
+    border-radius: 10px; /* Rounded corners */
+    color: white; /* White text for contrast */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding inside the banner box */
+    position: relative; /* Positioning for background images */
+    overflow: hidden; /* Prevent overflow */
+    transition: transform 0.3s; /* Smooth scale effect on hover */
+}
+
+/* Background images */
+.banner-box {
+    background-image: url(../../assets/banner43.jpeg); /* Change to your image path */
+    background-size: cover; /* Cover the entire box */
+    background-position: center; /* Center the image */
+    height: 300px;
+}
+
+.banner-box.banner-box2 {
+    background-image: url('../../assets/91.jpg'); /* Change to your image path */
+}
+
+/* Hover effect */
+.banner-box:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Title and subtitle styles */
+.banner-box h4 {
+    font-size: 1.5rem; /* Size for the small heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.banner-box h2 {
+    font-size: 2.5rem; /* Size for the main heading */
+    margin: 10px 0; /* Space around the main heading */
+}
+
+.banner-box span {
+    font-size: 1rem; /* Size for the descriptive text */
+    display: block; /* Make it a block element */
+    margin: 10px 0; /* Space around the text */
+}
+
+/* Button styles */
+.banner-box button {
+    background-color: rgba(255, 255, 255, 0.8); /* Light button background */
+    color: #333; /* Dark text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+.banner-box button:hover {
+    color: white;
+    background-color: rgb(129, 3, 3); /* Solid white on hover */
+}
+/* Newsletter section styles */
+#newsletter {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between text and form */
+    align-items: center; /* Center items vertically */
+    padding: 50px 20px; /* Padding around the section */
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Text styles */
+.newstext {
+    flex: 1; /* Allow text to take up available space */
+    margin-right: 20px; /* Space between text and form */
+}
+
+.newstext h4 {
+    font-size: 1.8rem; /* Size for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.newstext p {
+    font-size: 1rem; /* Size for the paragraph text */
+    color: #666; /* Grey color for the text */
+}
+
+/* Special offer styling */
+.newstext span {
+    font-weight: bold; /* Make special offers bold */
+    color: #333; /* Darker color for emphasis */
+}
+
+/* Form styles */
+.form {
+    flex: 1; /* Allow form to take up available space */
+    display: flex; /* Use flexbox for input and button */
+    align-items: center; /* Center items vertically */
+}
+
+.form input[type="text"] {
+    flex: 1; /* Input takes full available width */
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size for input */
+    margin-right: 10px; /* Space between input and button */
+}
+
+/* Button styles */
+.form button {
+    background-color: #333; /* Dark background for button */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+.form button:hover {
+    background-color: #555; /* Lighter background on hover */
+}
+
+.pro {
+    position: relative; /* Set relative for absolute positioning within the child */
+    width: 250px; /* Set width of product card */
+    overflow: hidden; /* Hide the button until hover */
+}
+
+
+
+
